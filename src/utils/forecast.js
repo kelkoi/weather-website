@@ -22,7 +22,8 @@ const forecast = (latitude, longitude, callback) => {
           body.currently.temperature +
           " degrees out. There is a chance of " +
           body.currently.precipProbability +
-          " % of rain."
+          " % of rain. the wind speed is " +
+          body.daily.data[0].windSpeed
       );
     }
   });
